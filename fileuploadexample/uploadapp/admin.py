@@ -4,7 +4,7 @@ from .models import File
 
 @admin.register(File)
 class FileAdmin(admin.ModelAdmin):
-    list_display = ['id', 'file']
+    list_display = ['id', 'name', 'file']
 
     class Meta:
         model = File
